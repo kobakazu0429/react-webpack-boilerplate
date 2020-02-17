@@ -1,5 +1,24 @@
-import React from "react";
+import React, { FC } from "react";
+import { ThemeProvider } from "@/theme/ThemeProvider";
+import { GlobalStyle } from "@/theme/GlobalStyle";
+import { createRouter } from "@/routes";
+import { TopPage } from "@/pages/TopPage";
 
-const App = () => <p>Hello, React World !</p>;
+const routes = [
+  {
+    exact: true,
+    path: "/",
+    component: TopPage
+  }
+];
 
-export default App;
+const Router = createRouter({ routes });
+
+export const App: FC = () => {
+  return (
+    <ThemeProvider themeName="default">
+      <GlobalStyle />
+      {Router}
+    </ThemeProvider>
+  );
+};
