@@ -18,7 +18,7 @@ module.exports = {
     new HtmlWebpackPlugin({ template: "./public/index.html" }),
     new ForkTsCheckerWebpackPlugin({
       workers: 1,
-      tslint: true
+      eslint: true
     })
   ],
 
@@ -27,15 +27,11 @@ module.exports = {
       {
         enforce: "pre",
         test: /\.(ts|tsx)?$/,
-        use: [
-          {
-            loader: "tslint-loader",
-            options: {
-              typeCheck: true,
-              fix: true
-            }
-          }
-        ]
+        exclude: /node_modules/,
+        loader: "eslint-loader",
+        options: {
+          cache: true
+        }
       },
       {
         test: /\.(ts|tsx)?$/,

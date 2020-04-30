@@ -7,11 +7,16 @@
   "scripts": {
     "build": "webpack --color --progress --config ./config/webpack.config.prod.js",
     "dev": "webpack-dev-server --config ./config/webpack.config.dev.js",
-    "lint": "tslint --fix -c ./tslint.json 'src/**/*{.ts,.tsx}'"
+    "lint": "eslint --ext .ts,.tsx ./src --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "*.{js,ts,tsx}": [
-      "yarn lint",
+      "eslint --ext .ts,.tsx ./src --fix",
       "git add"
     ]
   },
@@ -28,18 +33,28 @@
     "@types/react-dom": "16.9.7",
     "@types/react-router-dom": "5.1.5",
     "@types/styled-components": "5.1.0",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
     "clean-webpack-plugin": "3.0.0",
     "css-loader": "3.5.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
     "file-loader": "6.0.0",
     "fork-ts-checker-webpack-plugin": "4.1.3",
     "html-webpack-plugin": "3.2.0",
-    "prettier": "1.19.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.0",
+    "prettier": "^2.0.5",
     "style-loader": "1.2.1",
     "ts-loader": "6.2.2",
-    "tslint": "6.1.2",
-    "tslint-config-prettier": "1.18.0",
-    "tslint-loader": "3.5.4",
-    "tslint-plugin-prettier": "2.3.0",
     "typescript": "3.8.3",
     "url-loader": "4.1.0",
     "webpack": "4.43.0",
