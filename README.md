@@ -8,7 +8,7 @@ My React + Webpack boilerplate 201905
 - webpack
 - typescript
 - prettier
-- tslint
+- eslint
 
 This code does **not** include framework, ci, and other (production) tools.
 
