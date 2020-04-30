@@ -8,8 +8,8 @@ interface Props {
 export const createRouter: FC<Props> = ({ routes }) => {
   return (
     <Switch>
-      {routes.map((route, index) => (
-        <Route {...route} key={`route-key-${index}`} />
+      {routes.map(route => (
+        <Route {...route} key={`route-key-${route.path}`} />
       ))}
     </Switch>
   );

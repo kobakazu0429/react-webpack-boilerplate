@@ -27,11 +27,28 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "config/webpack.config.common.js"
+      }
+    }
+  },
   "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "prettier/prettier": "error",
     "no-console": "off",
     "lines-between-class-members": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": [
+      "error",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/member-ordering": [
@@ -60,6 +77,12 @@
           "instance-method"
         ]
       }
-    ]
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".js", ".jsx", "ts", "tsx"] }
+    ],
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off"
   }
 }
