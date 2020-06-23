@@ -172,12 +172,12 @@
     eslint-plugin-prettier "^3.1.4"
     prettier "^2.0.5"
 
-"@kobakazu0429/eslint-config-typescript-react@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-typescript-react/-/eslint-config-typescript-react-1.0.6.tgz#7e015d534b5c56544515801972c841e60499ff98"
-  integrity sha512-gszqQ1jG5131rQq4C5c25iWj/BFJsowmNAjve3Wy7JyE4zLqU8Z3Ls61iBMtULT7z/jLX4McG/XtYBTKn1b3Lg==
+"@kobakazu0429/eslint-config-typescript-react@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-typescript-react/-/eslint-config-typescript-react-1.0.7.tgz#e92998b3b0368a13e1585b51c21e9846fea1ab88"
+  integrity sha512-Oti6ZMVIKlODh1lK7ryHFg1HbvET4kMaUlDTn+9lTXA1gkyR+2CtKF6GkPbxPRDzPzDxMmgFpKXT5DsuZV3XhQ==
   dependencies:
-    "@kobakazu0429/eslint-config-typescript" "^1.0.6"
+    "@kobakazu0429/eslint-config-typescript" "^1.0.7"
     "@typescript-eslint/eslint-plugin" "^3.4.0"
     "@typescript-eslint/parser" "^3.4.0"
     eslint-config-airbnb "^18.2.0"
@@ -188,10 +188,10 @@
     eslint-plugin-react-hooks "^4.0.4"
     prettier "^2.0.5"
 
-"@kobakazu0429/eslint-config-typescript@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-typescript/-/eslint-config-typescript-1.0.6.tgz#75b61ac822889eff02ddb6df4801b7f5e8fdca82"
-  integrity sha512-RLqJTG+ojHqzBQSET6E8LBnkex5tdlusMvrq2HK6roLbA9tdw8qXNK8+bzJLj2tZW4Md1L7hGWBHIog03gxe3Q==
+"@kobakazu0429/eslint-config-typescript@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-typescript/-/eslint-config-typescript-1.0.7.tgz#532ea757024e332ab713cae1d0fc6e5ac04f1cff"
+  integrity sha512-/6llJPyPcUyR5JIG8pVAT7eiTTyBK4bsaqgpyKujMjkZ4GHpVV6Y/HUAzNenegYafioBNlZjmBHvsTaVeCX5Fw==
   dependencies:
     "@kobakazu0429/eslint-config-base" "^1.0.6"
     "@typescript-eslint/eslint-plugin" "^3.4.0"
