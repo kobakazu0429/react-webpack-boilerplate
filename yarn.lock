@@ -172,10 +172,10 @@
     eslint-plugin-prettier "^3.1.4"
     prettier "^2.0.5"
 
-"@kobakazu0429/eslint-config-typescript-react@1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-typescript-react/-/eslint-config-typescript-react-1.0.8.tgz#b0e0406e7f5a3c9368026f797ad318da6e025069"
-  integrity sha512-EdsaaYpl8aSAQfYrhejRHq4NSGONsu2n8f0xOnmad99oRoO/LzMbu1e2OgdThvw3fTaGTx7dEgLSX2a3i06Dnw==
+"@kobakazu0429/eslint-config-typescript-react@1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-typescript-react/-/eslint-config-typescript-react-1.0.9.tgz#5aec71cd906eebebd00c2ad07fb66c498dfe6fe9"
+  integrity sha512-mGLzyZbFi5A5r94s2s9OY1lq9EqLdPDsDwhEX3/z/kkaL/quCNc04nwngMUMOO4Fsafr/VZ0huckXQitUHPv1Q==
   dependencies:
     "@kobakazu0429/eslint-config-typescript" "^1.0.8"
     "@typescript-eslint/eslint-plugin" "^3.4.0"
