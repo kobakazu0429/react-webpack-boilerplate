@@ -41,7 +41,7 @@
     "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.21.2",
     "file-loader": "6.0.0",
-    "fork-ts-checker-webpack-plugin": "4.1.6",
+    "fork-ts-checker-webpack-plugin": "5.0.13",
     "html-webpack-plugin": "4.3.0",
     "husky": "4.2.5",
     "lint-staged": "10.2.11",
