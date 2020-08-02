@@ -17,8 +17,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: "./public/index.html" }),
     new ForkTsCheckerWebpackPlugin({
-      workers: 1,
-      eslint: true
+      eslint: {
+        files: "./src/**/*.{ts,tsx,js,jsx}"
+      }
     })
   ],
 
