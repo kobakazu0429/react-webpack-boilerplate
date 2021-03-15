@@ -178,42 +178,42 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@kobakazu0429/eslint-config-base@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-base/-/eslint-config-base-2.0.1.tgz#324d26c89472cfe3bdf4a4ddeba5a86b6bce507d"
-  integrity sha512-YDSvFH8KrCAqIHpGZIMkiwgkrp1OaYpyuqlPti1BYbdQ1m8/mKsNoFs/1dzoSfCbDCbrFyg2dd4veonLCkuedg==
+"@kobakazu0429/eslint-config-base@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-base/-/eslint-config-base-2.0.3.tgz#e2d7b21a88a14e0de6f5edf603eaa529a59f4f61"
+  integrity sha512-x/v97rdx/okDWlHGSnPmiW2uvT0oGIeKunVINkyeDu/1FU6Ah3h1K878pkQJH2LvXDWFxKpmGwYqIV3nlWpiBQ==
   dependencies:
     eslint-config-airbnb-base "^14.2.0"
-    eslint-config-prettier "^6.11.0"
+    eslint-config-prettier "^8.0.0"
     eslint-plugin-prettier "^3.1.4"
     prettier "^2.0.5"
 
-"@kobakazu0429/eslint-config-typescript-react@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-typescript-react/-/eslint-config-typescript-react-2.0.1.tgz#84627f43583718f9aaa485e3d8a862e095877961"
-  integrity sha512-6F3LCsBdNo5inRU5OYgD4DqhWdq9TAS7lZfN7kbex26kjA+0jH82PBIfp9VA+75r/KgeGx4zqVJGFepE5jehHQ==
+"@kobakazu0429/eslint-config-typescript-react@2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-typescript-react/-/eslint-config-typescript-react-2.0.4.tgz#710080adb43694a270c997ecfdaf61a246e36c6c"
+  integrity sha512-9sMj2pBcuhVy2gyGLlFAyjdw8OwghdTFIEOwHV1OppqlLRAFPleDeC8RwNRhuVS4ogd85jvQi1W7kbnDxpcaVw==
   dependencies:
-    "@kobakazu0429/eslint-config-typescript" "^2.0.1"
+    "@kobakazu0429/eslint-config-typescript" "^2.0.3"
     "@typescript-eslint/eslint-plugin" "^4.0.0"
     "@typescript-eslint/parser" "^4.0.0"
     eslint-config-airbnb "^18.2.0"
-    eslint-config-prettier "^6.11.0"
+    eslint-config-prettier "^8.0.0"
     eslint-plugin-jsx-a11y "^6.3.1"
     eslint-plugin-prettier "^3.1.4"
     eslint-plugin-react "^7.20.0"
     eslint-plugin-react-hooks "^4.0.4"
     prettier "^2.0.5"
 
-"@kobakazu0429/eslint-config-typescript@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-typescript/-/eslint-config-typescript-2.0.1.tgz#2c9814ee7986be5f7ad061460ab09c80a8e94672"
-  integrity sha512-mbqXz/tLrB45IvEq55nDqY3mx0HiDO8XEq4O+jnjjkHU+0e7aZhLdlVBld19FXBIL8Oh/6wnI1FRK9k2xZh1NQ==
+"@kobakazu0429/eslint-config-typescript@^2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@kobakazu0429/eslint-config-typescript/-/eslint-config-typescript-2.0.3.tgz#470cb53ab72bee35d99def11fce16dff46d0efb1"
+  integrity sha512-QhkYk+tVWGgzFquMclfsBtSB2n1TjMgV2Nk4vx3DtbCFcFxcSmjJkWz7Y7HflFUttIUii+YYObPaLsQH0q4eWQ==
   dependencies:
-    "@kobakazu0429/eslint-config-base" "^2.0.1"
+    "@kobakazu0429/eslint-config-base" "^2.0.3"
     "@typescript-eslint/eslint-plugin" "^4.0.0"
     "@typescript-eslint/parser" "^4.0.0"
     eslint-config-airbnb-base "^14.2.0"
-    eslint-config-prettier "^6.11.0"
+    eslint-config-prettier "^8.0.0"
     eslint-plugin-prettier "^3.1.4"
     prettier "^2.0.5"
 
@@ -2332,12 +2332,10 @@ eslint-config-airbnb@^18.2.0:
     object.assign "^4.1.0"
     object.entries "^1.1.2"
 
-eslint-config-prettier@^6.11.0:
-  version "6.11.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.11.0.tgz#f6d2238c1290d01c859a8b5c1f7d352a0b0da8b1"
-  integrity sha512-oB8cpLWSAjOVFEJhhyMZh6NOEOtBVziaqdDQ86+qhDHFbZXoRTM7pNSvFRfW/W/L/LrQ38C99J5CGuRBBzBsdA==
-  dependencies:
-    get-stdin "^6.0.0"
+eslint-config-prettier@^8.0.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.1.0.tgz#4ef1eaf97afe5176e6a75ddfb57c335121abc5a6"
+  integrity sha512-oKMhGv3ihGbCIimCAjqkdzx2Q+jthoqnXSP+d86M9tptwugycmTFdVR4IpLgq2c4SHifbwO90z2fQ8/Aio73yw==
 
 eslint-import-resolver-node@^0.3.4:
   version "0.3.4"
@@ -3095,11 +3093,6 @@ get-own-enumerable-property-symbols@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/get-own-enumerable-property-symbols/-/get-own-enumerable-property-symbols-3.0.2.tgz#b5fde77f22cbe35f390b4e089922c50bce6ef664"
   integrity sha512-I0UBV/XOz1XkIJHEUDMZAbzCThU/H8DxmSfmdGcKPnVhu2VfFqr34jr9777IyaTYvxjedWhqVIilEDsCdP5G6g==
-
-get-stdin@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-6.0.0.tgz#9e09bf712b360ab9225e812048f71fde9c89657b"
-  integrity sha512-jp4tHawyV7+fkkSKyvjuLZswblUtz+SQKzSWnBbii16BuZksJlU1wuBYXY75r+duh/llF1ur6oNwi+2ZzjKZ7g==
 
 get-stream@^4.0.0:
   version "4.1.0"
