@@ -1,11 +1,11 @@
-import React, { FC } from "react";
+import React, { VFC } from "react";
 import { Route, Switch, RouteProps } from "react-router-dom";
 
 interface Props {
   routes: RouteProps[];
 }
 
-export const createRouter: FC<Props> = ({ routes }) => {
+export const createRouter: VFC<Props> = ({ routes }) => {
   return (
     <Switch>
       {routes.map(route => (

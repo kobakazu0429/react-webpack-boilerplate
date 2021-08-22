@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import React, { VFC } from "react";
 import styled from "styled-components";
 
-export const TopPage: FC = () => {
+export const TopPage: VFC = () => {
   return (
     <div>
       <BrandText>This is Top Page</BrandText>
