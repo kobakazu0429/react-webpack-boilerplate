@@ -1,8 +1,6 @@
 # react-webpack-boilerplate
 
-[![CircleCI](https://circleci.com/gh/kobakazu0429/react-webpack-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/kobakazu0429/react-webpack-boilerplate/tree/master)
-
-My React + Webpack boilerplate 201905
+My React + Webpack boilerplate 202108
 
 - yarn
 - webpack
@@ -13,6 +11,14 @@ My React + Webpack boilerplate 201905
 This code does **not** include framework, ci, and other (production) tools.
 
 ## Bootstrap
+
+### current
+
+Creating a repository from a template
+
+ref: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template
+
+### old
 
 ```bash
 # ... Setup node and yarn
