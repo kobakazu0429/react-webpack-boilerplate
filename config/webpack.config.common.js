@@ -4,7 +4,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 
-module.exports = {
+module.exports = /** @type {import('webpack').Configuration} */ ({
   entry: { app: path.resolve(__dirname, "../src/index.tsx") },
 
   resolve: {
@@ -42,11 +42,14 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loaders: [
+        use: [
           "style-loader",
-          { loader: "css-loader", options: { url: false } }
+          {
+            loader: "css-loader",
+            options: { url: false }
+          }
         ]
       }
     ]
   }
-};
+});

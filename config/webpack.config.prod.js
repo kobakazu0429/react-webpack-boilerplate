@@ -4,19 +4,19 @@ const path = require("path");
 const { merge } = require('webpack-merge');
 const common = require("./webpack.config.common.js");
 
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const ManifestPlugin = require("webpack-manifest-plugin");
+const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 
-module.exports = merge(common, {
+module.exports = merge(common, /** @type {import('webpack').Configuration} */({
   mode: "production",
   devtool: "source-map",
 
   output: {
+    clean: true,
     path: path.resolve(__dirname, "../dist/"),
-    filename: "[name]-[hash].js"
+    filename: "[name]-[contenthash].js"
   },
 
-  plugins: [new CleanWebpackPlugin(), new ManifestPlugin()],
+  plugins: [new WebpackManifestPlugin()],
 
   module: {
     rules: [
@@ -26,7 +26,7 @@ module.exports = merge(common, {
           {
             loader: "file-loader",
             options: {
-              name: "[path][name]-[hash].[ext]",
+              name: "[path][name]-[contenthash].[ext]",
               outputPath: "/",
               publicPath: "../dist"
             }
@@ -35,4 +35,4 @@ module.exports = merge(common, {
       }
     ]
   }
-});
+}));
